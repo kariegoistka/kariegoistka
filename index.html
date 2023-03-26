@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+
+<style>
+    input {
+        display: block;
+        margin: 0 0 10px 0;
+    }
+</style>
+
+<body>
+   <form method="post" action="/login">
+
+    <label>
+        <span>Введите логин</span>
+    <input type="login"
+    name="login"
+    required placeholder="Логин"
+    minlength="8"
+    maxlength="15"
+    />
+    </label>
+
+    <label>
+        <span>Введите адрес электронной почты</span>
+    <input type="email"
+    name="login"
+    required placeholder="Почта"
+    minlength="5"
+    />
+    </label>
+
+    <label>
+        <span>Введите пароль</span>
+    <input type="password"
+    name="password"
+    required placeholder="Пароль"
+    minlength="8"
+    />
+    </label>
+
+    <label>
+        <span>Повторите пароль</span>
+    <input type="password"
+    name="password"
+    required placeholder="Пароль"
+    minlength="8"
+    />
+    </label>
+
+    <select> 
+        <optgroup label="Выбор языка">
+      <option>Английский</option>
+      <option>Итальянский</option>
+      <option>Русский</option>
+      <option>Турецкий</option>
+    </optgroup>
+    </select>
+    
+    <p></p>
+
+    <button type="submit">
+        Регистрация
+      </button>
+
+</form>
+</body>
+</html>
