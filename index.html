@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
+
+    <link rel="stylesheet" href="/index.css">
+    
+    <link
+    rel="stylesheet"
+    href="https://fonts.google.com/specimen/Alkatra" />
+   
   </head>
 
-<style>
-    input {
-        display: block;
-        margin: 0 0 10px 0;
-    }
-</style>
-
 <body>
+    <div class="element">
+    <h1>Регистрация на сайте</h1>
+    </div>
+
    <form method="post" action="/login">
 
+<div class="container">
     <label>
         <span>Введите логин</span>
     <input type="login"
@@ -27,6 +32,7 @@
     />
     </label>
 
+
     <label>
         <span>Введите адрес электронной почты</span>
     <input type="email"
@@ -35,6 +41,7 @@
     minlength="5"
     />
     </label>
+
 
     <label>
         <span>Введите пароль</span>
@@ -45,6 +52,7 @@
     />
     </label>
 
+
     <label>
         <span>Повторите пароль</span>
     <input type="password"
@@ -54,6 +62,7 @@
     />
     </label>
 
+
     <select> 
         <optgroup label="Выбор языка">
       <option>Английский</option>
@@ -62,13 +71,14 @@
       <option>Турецкий</option>
     </optgroup>
     </select>
-    
-    <p></p>
 
+</div>
+
+ <div class="button">
     <button type="submit">
         Регистрация
       </button>
-
+ </div>
 </form>
 </body>
 </html>
